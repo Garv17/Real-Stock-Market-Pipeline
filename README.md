@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Real-Time Stocks Market Data Pipeline
 
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?logo=snowflake&logoColor=white)
@@ -151,3 +152,6 @@ real-time-stocks-pipeline/
 **LinkedIn**: [username](https://www.linkedin.com/in/jayachandrakadiveti/) 
 
 **Contact**: [datawithjay1@gmail.com](mailto:datawithjay1@gmail.com)
+=======
+# Real-Stock-Market-Pipeline
+>>>>>>> c925de1485862e62286261b6c5593655c514dbfe
