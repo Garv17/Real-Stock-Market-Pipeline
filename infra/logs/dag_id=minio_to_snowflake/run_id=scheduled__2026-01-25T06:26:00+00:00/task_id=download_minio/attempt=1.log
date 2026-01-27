@@ -1,0 +1,19 @@
+[2026-01-25T06:27:03.944+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-25T06:27:03.970+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-25T06:26:00+00:00 [queued]>
+[2026-01-25T06:27:03.977+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-25T06:26:00+00:00 [queued]>
+[2026-01-25T06:27:03.977+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-25T06:27:03.984+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): download_minio> on 2026-01-25 06:26:00+00:00
+[2026-01-25T06:27:03.996+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=6430) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-25T06:27:03.994+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'download_minio', 'scheduled__2026-01-25T06:26:00+00:00', '--job-id', '425', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmpme00803t']
+[2026-01-25T06:27:03.997+0000] {standard_task_runner.py:91} INFO - Job 425: Subtask download_minio
+[2026-01-25T06:27:03.997+0000] {standard_task_runner.py:64} INFO - Started process 6440 to run task
+[2026-01-25T06:27:04.046+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.download_minio scheduled__2026-01-25T06:26:00+00:00 [running]> on host a80bed76b455
+[2026-01-25T06:27:04.117+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='download_minio' AIRFLOW_CTX_EXECUTION_DATE='2026-01-25T06:26:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-25T06:26:00+00:00'
+[2026-01-25T06:27:04.118+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-25T06:27:04.249+0000] {logging_mixin.py:188} INFO - No new files in MinIO.
+[2026-01-25T06:27:04.250+0000] {python.py:237} INFO - Done. Returned value was: []
+[2026-01-25T06:27:04.250+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-25T06:27:04.438+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=minio_to_snowflake, task_id=download_minio, run_id=scheduled__2026-01-25T06:26:00+00:00, execution_date=20260125T062600, start_date=20260125T062703, end_date=20260125T062704
+[2026-01-25T06:27:04.472+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-01-25T06:27:04.488+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-25T06:27:04.489+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

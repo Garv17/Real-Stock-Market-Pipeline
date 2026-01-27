@@ -1,0 +1,50 @@
+[2026-01-24T19:09:21.855+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-24T19:09:21.928+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-01-24T19:05:00+00:00 [queued]>
+[2026-01-24T19:09:21.936+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-01-24T19:05:00+00:00 [queued]>
+[2026-01-24T19:09:21.937+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-01-24T19:09:21.952+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-01-24 19:05:00+00:00
+[2026-01-24T19:09:21.966+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=1067) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-01-24T19:09:21.963+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake', 'load_snowflake', 'scheduled__2026-01-24T19:05:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake.py', '--cfg-path', '/tmp/tmpt76it8dp']
+[2026-01-24T19:09:21.968+0000] {standard_task_runner.py:64} INFO - Started process 1077 to run task
+[2026-01-24T19:09:21.969+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask load_snowflake
+[2026-01-24T19:09:22.043+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake.load_snowflake scheduled__2026-01-24T19:05:00+00:00 [running]> on host a80bed76b455
+[2026-01-24T19:09:22.144+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-01-24T19:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-24T19:05:00+00:00'
+[2026-01-24T19:09:22.145+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-24T19:09:22.190+0000] {connection.py:408} INFO - Snowflake Connector for Python Version: 3.11.0, Python Version: 3.12.4, Platform: Linux-6.12.54-linuxkit-aarch64-with-glibc2.36
+[2026-01-24T19:09:22.195+0000] {connection.py:1258} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2026-01-24T19:10:41.205+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769235272.json to Snowflake stage
+[2026-01-24T19:10:42.212+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769235283.json to Snowflake stage
+[2026-01-24T19:10:43.246+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248266.json to Snowflake stage
+[2026-01-24T19:10:44.459+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248277.json to Snowflake stage
+[2026-01-24T19:10:45.396+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248296.json to Snowflake stage
+[2026-01-24T19:10:46.294+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248308.json to Snowflake stage
+[2026-01-24T19:10:47.320+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248321.json to Snowflake stage
+[2026-01-24T19:10:48.344+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248331.json to Snowflake stage
+[2026-01-24T19:10:49.287+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248341.json to Snowflake stage
+[2026-01-24T19:10:50.292+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248356.json to Snowflake stage
+[2026-01-24T19:10:51.574+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248369.json to Snowflake stage
+[2026-01-24T19:10:52.646+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248383.json to Snowflake stage
+[2026-01-24T19:10:53.931+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/1769248395.json to Snowflake stage
+[2026-01-24T19:10:55.539+0000] {cursor.py:1149} INFO - Number of results in first chunk: 1
+[2026-01-24T19:10:55.540+0000] {logging_mixin.py:188} INFO - COPY INTO Snowflake completed
+[2026-01-24T19:10:55.789+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769235272.json
+[2026-01-24T19:10:55.793+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769235283.json
+[2026-01-24T19:10:55.798+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248266.json
+[2026-01-24T19:10:55.802+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248277.json
+[2026-01-24T19:10:55.806+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248296.json
+[2026-01-24T19:10:55.811+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248308.json
+[2026-01-24T19:10:55.814+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248321.json
+[2026-01-24T19:10:55.818+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248331.json
+[2026-01-24T19:10:55.825+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248341.json
+[2026-01-24T19:10:55.828+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248356.json
+[2026-01-24T19:10:55.830+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248369.json
+[2026-01-24T19:10:55.839+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248383.json
+[2026-01-24T19:10:55.844+0000] {logging_mixin.py:188} INFO - Deleted processed file TSLA/1769248395.json
+[2026-01-24T19:10:55.845+0000] {connection.py:773} INFO - closed
+[2026-01-24T19:10:56.146+0000] {connection.py:779} INFO - No async queries seem to be running, deleting session
+[2026-01-24T19:10:56.474+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-01-24T19:10:56.476+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-24T19:10:56.519+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=minio_to_snowflake, task_id=load_snowflake, run_id=scheduled__2026-01-24T19:05:00+00:00, execution_date=20260124T190500, start_date=20260124T190921, end_date=20260124T191056
+[2026-01-24T19:10:56.587+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-01-24T19:10:56.631+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-24T19:10:56.632+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
