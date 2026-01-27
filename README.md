@@ -147,11 +147,3 @@ real-time-stocks-pipeline/
 
 ---
 
-**Author**: *Jaya Chandra Kadiveti* 
-
-**LinkedIn**: [username](https://www.linkedin.com/in/jayachandrakadiveti/) 
-
-**Contact**: [datawithjay1@gmail.com](mailto:datawithjay1@gmail.com)
-=======
-# Real-Stock-Market-Pipeline
->>>>>>> c925de1485862e62286261b6c5593655c514dbfe
