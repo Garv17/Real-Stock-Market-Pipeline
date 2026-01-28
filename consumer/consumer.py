@@ -47,7 +47,6 @@ print("Consumerstreaming and saving to MinIO...")
 for message in consumer:
     record = message.value
 
-    # 🔴 THIS LINE IS CRITICAL
     if record is None:
         continue
 
@@ -63,3 +62,4 @@ for message in consumer:
     )
 
     print(f"📦 Saved record for {symbol} → s3://{bucket_name}/{key}")
+
