@@ -7,7 +7,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+
 
 ---
 
@@ -27,7 +27,7 @@ We capture **live stock market data** from an external API, stream it in real ti
 - **Apache Kafka** → Real-time Streaming  
 - **Python** → Data Fetching & API Integration  
 - **Docker** → Containerization  
-- **Power BI** → Data Visualization  
+  
 
 ---
 
@@ -37,7 +37,6 @@ We capture **live stock market data** from an external API, stream it in real ti
 - Orchestrated ETL workflow using **Airflow**  
 - Transformations using **DBT** inside Snowflake  
 - Scalable cloud warehouse powered by **Snowflake**  
-- Analytics-ready **Power BI dashboards**  
 
 ---
 
@@ -73,7 +72,6 @@ real-time-stocks-pipeline/
 3. Run the Python producer to fetch live stock data  
 4. Data flows into Snowflake → DBT applies transformations  
 5. Orchestrate everything with Airflow  
-6. Connect Power BI for visualization  
 
 ---
 
@@ -124,18 +122,7 @@ real-time-stocks-pipeline/
   - [**Bronze models**](dbt_stocks/models/bronze/bronze_stg_stock_quotes.sql) → raw structured data  
   - [**Silver models**](dbt_stocks/models/silver/silver_clean_stock_quotes.sql) → cleaned, validated data  
   - [**Gold models**](dbt_stocks/models/gold) → analytical views (Candlestick, KPI, Tree Map)
-      
-
----
-
-### **7. Power BI Dashboard**
-- Connected **Power BI** to Snowflake (Gold layer) using **Direct Query**.
-- Built:
-  - **Candlestick chart** → stock market patterns  
-  - **Tree chart** → stock price trends  
-  - **gauge charts** → stock volume & total sales breakdown  
-  - **KPI's** → real-time sortable view  
-
+    
 ---
 
 ## 📊 Final Deliverables
@@ -143,7 +130,6 @@ real-time-stocks-pipeline/
 - **Snowflake tables (Bronze → Silver → Gold)**  
 - **Transformed analytics models with DBT**  
 - **Orchestrated DAGs in Airflow**  
-- **Power BI dashboard with live insights**  
 
 ---
 
